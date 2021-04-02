@@ -15,8 +15,6 @@ def bfs(graph, start, visited):
                 # print(queue)
 
 
-
-
 graph = [
     [],
     [2, 3, 8],
