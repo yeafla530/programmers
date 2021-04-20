@@ -14,7 +14,6 @@ check = [False,False,False,False]
 # turn_time = 0
 
 count = 1
-flag = True
 nx = 0
 ny = 0
 
@@ -50,7 +49,7 @@ while True:
     # 네방향 모두 가본 칸이거나 바다면 바라보는 방향 유지한 채 한칸 뒤로 => 1단계
     if all(check):
     # if turn_time == 4:
-        print('hello')
+        # print('hello')
         nx = x - dx[d]
         ny = y - dy[d]
         # 만약 뒤쪽이 바다여서 갈 수 없으면 종료
