@@ -9,4 +9,4 @@ for (let i = 3; i < n+1; i++) {
     d[i] = d[i-1] + d[i-2]
 }
 
-console.log(d[n])
+console.log(d[n]) // 218922995834555200000
