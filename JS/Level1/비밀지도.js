@@ -1,11 +1,12 @@
 // 다른사람 풀이
 function solution(n, arr1, arr2) {
+    // 비트 연산자를 이용
     return arr1.map((v, i) => addZero(n, (v | arr2[i]).toString(2).replace(/1|0/g, a => +a ? '#' : ' ')))
 
 }
 
 const addZero = (n, s) => {
-    return 
+    return '0'.repeat(n - s.length) + s;
 }
 // 내 풀이 (무식)
 function solution(n, arr1, arr2) {
