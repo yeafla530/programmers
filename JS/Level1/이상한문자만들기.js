@@ -19,3 +19,28 @@ function solution(s) {
     
     return answer;
 }
+
+//다른 사람 풀이
+function solution(s) {
+    var answer = '';
+    let num = 1
+    for (let i = 0; i < s.length; i++) {
+        if (s[i] == ' ') {
+            num = 1
+            answer += ' '
+            continue
+        }
+        
+        if (num % 2 == 0) {
+            answer += s[i].toLowerCase()
+            num ++
+        }
+        else {
+            answer += s[i].toUpperCase()
+            num ++
+        }
+    }
+    
+    
+    return answer;
+}
