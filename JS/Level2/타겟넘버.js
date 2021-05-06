@@ -3,8 +3,7 @@ result = solution([1, 1, 1, 1, 1], 3)
 console.log(result)
 
 function solution(numbers , target) {
-    let answer = 0
-   
+    let answer = 0 
     console.log(numbers)
     function subset(cnt,sum){
         if(cnt===numbers.length){
