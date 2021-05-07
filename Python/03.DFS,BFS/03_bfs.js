@@ -1,19 +1,20 @@
 const bfs = function(graph, v, visited) {
     let queue = []
+    // console.log(visited)
     visited[v] = true
     queue.push(v)
-    while (queue.length !== 0) {
-        console.log(queue)
+    while (!(queue.length === 0)) {
+        // console.log(queue)
         v = queue.shift()
+        console.log(v)
         for (const a of graph[v]) {
-            console.log(a)
             if (visited[a] !== true) {
                 visited[a] = true
                 queue.push(a)
-                console.log('a' + queue)
             } 
         }
     }
+    
 }
 
 let graph = [
@@ -28,5 +29,5 @@ let graph = [
     [1, 7]
 ]
 
-let visited = [false] * 9
-result = bfs(graph, 1, visited)
+let visited = Array(9).fill(false)
+bfs(graph, 1, visited)
